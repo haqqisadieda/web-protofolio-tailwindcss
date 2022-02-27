@@ -10,6 +10,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, 'views'));
 
 app.use('/css',  express.static(path.resolve(__dirname, 'dist')));
+app.use('/js',  express.static(path.resolve(__dirname, 'app/js')));
 app.use('/img',  express.static(path.resolve(__dirname, 'app/img')));
 
 app.get('/', (req, res) => {

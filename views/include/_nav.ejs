@@ -1,16 +1,18 @@
-<section class="container bg-hero bg-left-bottom h-[700px]">
+<section
+  class="container bg-hero bg-center md:bg-left-bottom h-[680px] md:h-[600px] lg:h-[750px] xl:h-[700px] max-w-full md:max-w-full"
+>
   <!-- section navbar -->
-  <section class="flex mx-auto px-40 py-8">
+  <section class="flex mx-auto px-10 md:px-20 lg:px-32 xl:px-40 py-8">
     <!-- brand logo -->
     <div
-      class="w-3/12 uppercase text-2xl font-semibold tracking-widest text-white"
+      class="w-full md:w-3/12 uppercase text-xl md:text-lg lg:text-xl xl:text-2xl font-semibold tracking-widest text-white md:text-left"
     >
       <a href="#">Profile</a>
     </div>
 
     <!-- main menu -->
     <div
-      class="w-6/12 flex text-lg tracking-wider space-x-10 justify-center py-3"
+      class="hidden w-6/12 md:flex md:text-sm lg:text-base xl:text-lg tracking-wider md:space-x-4 lg:space-x-7 xl:space-x-10 justify-center md:py-1"
     >
       <a href="#" class="text-slate-300 hover:text-white">Home</a>
       <a href="#about" class="text-slate-300 hover:text-white">About</a>
@@ -19,12 +21,38 @@
     </div>
 
     <!-- button contact -->
-    <div class="w-3/12 text-right">
+    <div class="hidden md:block w-3/12 text-right md:-mt-1 lg:-mt-2">
       <a
         href="#contact"
-        class="text-yellow-400 border-2 border-yellow-400 hover:text-blue-500 hover:border-transparent hover:bg-yellow-400 hover:shadow-lg hover:transition-all hover:ease-in rounded-full px-8 py-2 inline-block"
+        class="md:text-sm lg:text-base text-yellow-400 border-2 border-yellow-400 hover:text-blue-500 hover:border-transparent hover:bg-yellow-400 hover:shadow-lg hover:transition-all hover:ease-in rounded-full md:px-3 md:py-1 lg:px-6 lg:py-2 xl:px-8 xl:py-2 inline-block"
         >Contact Me</a
       >
+    </div>
+    <div class="w-9/12 md:hidden text-right hamburger">
+      <img
+        src="/img/menu.svg"
+        alt=""
+        class="inline-block fill-white cursor-pointer"
+      />
+    </div>
+    <div
+      class="fixed bg-white z-10 -right-full top-0 h-full w-full transition-all ease-in-out wrapper"
+    >
+      <img
+        src="/img/x.svg"
+        alt=""
+        class="absolute top-8 right-8 w-8 cursor-pointer close"
+      />
+      <div
+        class="flex flex-col text-lg font-semibold tracking-wider text-center p-10 space-y-6"
+      >
+        <a href="#" class="text-slate-600 hover:text-slate-400">Home</a>
+        <a href="#about" class="text-slate-600 hover:text-slate-400">About</a>
+        <a href="#skills" class="text-slate-600 hover:text-slate-400">Skills</a>
+        <a href="#contact" class="text-slate-600 hover:text-slate-400"
+          >Contact</a
+        >
+      </div>
     </div>
   </section>
 

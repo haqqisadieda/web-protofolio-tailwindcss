@@ -11,3 +11,4 @@ My Portofolio Project
 ## Todo
 
 - Responsiveness
+- minimum width 1280 (lg)
