@@ -12,3 +12,5 @@ My Portofolio Project
 
 - Responsiveness
 - minimum width 1280 (lg)
+
+## Done
